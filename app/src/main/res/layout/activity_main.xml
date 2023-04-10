@@ -4,25 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
 
-    <com.innovation.materialtablayout.SegmentTabLayout
-        android:id="@+id/tl_2"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:paddingRight="10dp"
-        tl:tl_indicator_corner_radius="8dp"
-        tl:layout_constraintEnd_toEndOf="parent"
-        tl:layout_constraintStart_toStartOf="parent"
-        tl:layout_constraintTop_toTopOf="parent"
-        tl:tl_indicator_anim_enable="true"
-        tl:tl_indicator_bounce_enable="true"
-        tl:tl_indicator_color="#009688"
-        tl:tl_tab_padding="20dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/colorWhiteF6"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/colorWhiteFC"
+        app:strokeWidth="2dp"
+        tl:layout_constraintTop_toTopOf="parent">
+
+        <com.innovation.materialtablayout.SegmentTabLayout
+            android:id="@+id/tl_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            tl:layout_constraintEnd_toEndOf="parent"
+            tl:layout_constraintStart_toStartOf="parent"
+            tl:layout_constraintTop_toTopOf="parent"
+            tl:tl_bar_color="@color/colorWhiteF6"
+            tl:tl_bar_stroke_color="@color/white"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_indicator_color="@color/colorLightOrange"
+            tl:tl_indicator_corner_radius="24dp"
+            tl:tl_tab_padding="20dp"
+            tl:tl_textUnselectedColor="@color/colorBlack1E" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

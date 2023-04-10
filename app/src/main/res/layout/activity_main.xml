@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <com.innovation.materialtablayout.SegmentTabLayout
+        android:id="@+id/tl_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:paddingRight="10dp"
+        tl:tl_indicator_corner_radius="8dp"
+        tl:layout_constraintEnd_toEndOf="parent"
+        tl:layout_constraintStart_toStartOf="parent"
+        tl:layout_constraintTop_toTopOf="parent"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_bounce_enable="true"
+        tl:tl_indicator_color="#009688"
+        tl:tl_tab_padding="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
